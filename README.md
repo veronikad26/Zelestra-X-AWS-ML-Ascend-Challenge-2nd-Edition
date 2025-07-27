@@ -1,51 +1,22 @@
-# ☀️ Solar Panel Efficiency Prediction using ML
+# ⚡ Solar Panel Efficiency Prediction
 
-This project focuses on predicting solar panel efficiency using environmental and sensor data. Built as part of a machine learning hackathon, the goal was to achieve high accuracy using a robust ensemble pipeline.
+This project was developed for the **Zelestra X AWS ML Ascend Challenge (2nd Edition)**. The task was to predict solar panel efficiency using real-world sensor data such as temperature, irradiance, and voltage readings.
 
-## 📌 Problem Statement
+## 🧠 Problem Statement
 
-Solar panels' efficiency is influenced by various environmental factors like temperature, irradiance, humidity, etc. Accurately predicting efficiency helps optimize energy production and maintenance scheduling. This project leverages supervised learning models to make those predictions.
+Predict the efficiency of solar panels to help optimize energy output based on environmental and sensor data.
 
-## 🧩 Dataset
+## 🔍 Approach Summary
 
-The dataset contains sensor readings related to:
-- Ambient temperature
-- Panel temperature
-- Irradiance
-- Wind speed
-- Humidity
-- Time-based features
+- Cleaned and preprocessed the dataset
+- Performed feature engineering and correlation analysis
+- Trained LightGBM, XGBoost, and CatBoost models
+- Built a stacked ensemble with Optuna-based hyperparameter tuning
 
-Target: **Efficiency** of the solar panel.
+## 🏆 Hackathon Result
 
-## ⚙️ Pipeline Overview
-
-1. **Data Preprocessing**
-   - Handling missing values
-   - Outlier treatment
-   - Feature scaling
-
-2. **Feature Engineering**
-   - Creating time-based and polynomial features
-   - Encoding categorical data (if any)
-
-3. **Modeling**
-   - Trained multiple models:
-     - LightGBM
-     - XGBoost
-     - CatBoost
-   - Used **Optuna** for hyperparameter tuning
-   - Final predictions via **stacked ensembling**
-
-4. **Evaluation**
-   - RMSE, MAE, and R² Score used
-   - Final accuracy: **89.8%**, aiming for 90%+
-
-## 📦 Libraries Used
-
-- `pandas`, `numpy`
-- `scikit-learn`
-- `xgboost`, `lightgbm`, `catboost`
-- `optuna` for tuning
-- `matplotlib`, `seaborn` for visualization
+- **Rank:** `237 / 1016` participants  
+- **Platform:** Zelestra X AWS ML Ascend Challenge  
+- **Edition:** 2nd Edition  
+- **Track:** Solar Panel Efficiency Prediction
 
